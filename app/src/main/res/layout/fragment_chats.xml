@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ChatsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ChatsFragment_ModeEmpty"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_eeeeee"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/plus_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/start_a_new_conversation"
+                android:textColor="#eeeeee"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/ChatsFragment_ModeItems"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:clipToPadding="false"
+                android:paddingBottom="100dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                tools:listitem="@layout/list_item_fragment_chats_items_list"
+                android:id="@+id/ChatsFragment_ItemsList"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ChatsFragment_NewChatButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/circle_00bd51"
+        android:clickable="true"
+        android:contentDescription="@string/new_chat"
+        android:focusable="true"
+        android:padding="18dp"
+        android:src="@drawable/plus_icon"
+        android:tooltipText="@string/new_conversation" />
+
+</RelativeLayout>

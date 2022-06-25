@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:paddingTop="2.5dp"
+    android:paddingBottom="2.5dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/ActivityChat_MessageListRow_TypeStarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_list_row_type_starter_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_baseline_lock_24"
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:fontFamily="@font/oswald_regular"
+            android:textSize="13sp"
+            android:textColor="#54656f"
+            android:text="@string/starter_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ActivityChat_MessageListRow_TypeMessageSent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical">
+
+        <LinearLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="17.5dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/message_list_row_type_message_sent_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello bro"
+                android:textColor="#545454"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:20 am"
+                android:textColor="#CACACA"
+                android:fontFamily="@font/oswald_regular"
+                android:textSize="11.5sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

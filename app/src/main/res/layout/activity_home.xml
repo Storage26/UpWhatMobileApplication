@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:background="@drawable/activity_home_toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:tooltipText="@string/search"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/white_oval"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:contentDescription="@string/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/HomeActivity_ProfileButton"
+                android:tooltipText="@string/profile"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/search"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/user_icon_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="17dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/HomeActivity_TabItemChats"
+                android:focusable="true"
+                android:clickable="true"
+                android:text="@string/chats"
+                android:textAllCaps="true"
+                android:textColor="#afffd1"
+                android:textSize="12sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/HomeActivity_TabItemStatus"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:text="@string/status"
+                android:textAllCaps="true"
+                android:textColor="#afffd1"
+                android:textSize="12sp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/HomeActivity_TabItemCalls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:text="@string/calls"
+                android:textAllCaps="true"
+                android:textColor="#afffd1"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/HomeActivity_MainFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

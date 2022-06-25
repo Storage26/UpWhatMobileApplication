@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/FragmentChats_ItemsListRow_Container"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:paddingStart="17.5dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/box_f9f9f9"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:contentDescription="@string/profile_picture"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/user_icon"/>
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/FragmentChats_ItemsListRow_Name"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/black"
+                android:textSize="17.5sp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:ellipsize="end"
+                android:id="@+id/FragmentChats_ItemsListRow_LastMessage"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="#a6a6a6"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/FragmentChats_ItemsListRow_PresenceDot"
+            android:layout_marginEnd="20dp"
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:background="@drawable/green_dot"/>
+
+    </LinearLayout>
+
+</LinearLayout>

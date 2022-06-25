@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="17dp"
+    android:background="@drawable/dialog_default_background">
+
+    <TextView
+        android:text="@string/edit"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oswald_bold"
+        android:textSize="23sp"/>
+
+    <EditText
+        android:lines="4"
+        android:maxLength="200"
+        android:gravity="start|top"
+        android:id="@+id/EditBiographyDialog_Input"
+        android:autofillHints="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/biography"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textMultiLine"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#DDDDDD"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/oswald_regular"
+        android:background="@drawable/dialog_edit_text_default_background"/>
+
+    <TextView
+        android:id="@+id/EditBiographyDialog_DoneButton"
+        android:textAllCaps="true"
+        android:text="@string/done"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_default_action_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/oswald_bold"
+        android:paddingStart="30dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

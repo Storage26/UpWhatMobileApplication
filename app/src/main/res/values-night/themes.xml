@@ -1,0 +1,41 @@
+<resources>
+    <style name="Theme.UpWhat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="ChatActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#00b94f</item>
+        <item name="colorPrimaryVariant">#00b94f</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">#00b94f</item>
+        <item name="colorSecondaryVariant">#00b94f</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">#00b94f</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary</item>
+
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/primary</item>
+
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+</resources>

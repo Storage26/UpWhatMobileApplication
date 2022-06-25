@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="17dp"
+    android:background="@drawable/dialog_default_background">
+
+    <TextView
+        android:id="@+id/DefaultDialog_Title"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#008037"
+        android:fontFamily="@font/oswald_bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/DefaultDialog_Body"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#545454"
+        android:fontFamily="@font/oswald_regular"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/DefaultDialog_ActionButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/dialog_default_action_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/oswald_bold"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>
