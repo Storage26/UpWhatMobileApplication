@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="@drawable/dialog_default_background">
+
+    <TextView
+        android:text="@string/new_conversation"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#008037"
+        android:fontFamily="@font/oswald_bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:text="@string/enter_email_for_conversation"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#545454"
+        android:fontFamily="@font/oswald_regular"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/NewConversationDialog_EmailInput"
+        android:autofillHints="emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#DDDDDD"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/oswald_regular"
+        android:background="@drawable/dialog_edit_text_default_background_dark"/>
+
+    <TextView
+        android:id="@+id/NewConversationDialog_AddButton"
+        android:text="@string/add"
+        android:textAllCaps="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_default_action_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/oswald_bold"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

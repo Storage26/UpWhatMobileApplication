@@ -34,4 +34,6 @@
     <string name="view_profile_picture">View Profile Picture</string>
     <string name="view_profile">View Profile</string>
     <string name="starter_line">All the messages and calls are end-to-end encrypted. No one outside of this chat, not even UpWhat, can read or listen to them.</string>
+    <string name="enter_email_for_conversation">Enter the email address of the person you want to have conversation with.</string>
+    <string name="add">Add</string>
 </resources>

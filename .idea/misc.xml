@@ -20,6 +20,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/dialog_default_action_button_background.xml" value="0.1465" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/dialog_default_background.xml" value="0.1465" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/dialog_edit_text_default_background.xml" value="0.1465" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/dialog_edit_text_default_background_dark.xml" value="0.1465" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/dialog_loading_background.xml" value="0.1465" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/done_button_background.xml" value="0.1465" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/drawable/enter_login_code_box_background.xml" value="0.1465" />
@@ -46,6 +47,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/dialog_edit_display_name.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/dialog_loading.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/dialog_login_approval.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/dialog_new_conversation.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/dialog_profile.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/fragment_calls.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/UpWhat/app/src/main/res/layout/fragment_chats.xml" value="0.1796875" />

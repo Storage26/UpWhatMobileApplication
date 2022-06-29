@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 
 import com.ds.upwhat.Database.ChatList;
 import com.ds.upwhat.Database.Conversations;
+import com.ds.upwhat.DialogCreator.DialogManager;
 import com.ds.upwhat.ListAdapters.Adapter_FragmentChats_ItemsList;
 import com.ds.upwhat.Objects.ChatListObject;
 
@@ -37,6 +38,7 @@ public class ChatsFragment extends Fragment
     ListView listView;
 
     BroadcastReceiver receiver;
+    BroadcastReceiver receiverNC;
 
     private static final int MODE_EMPTY = 0;
     private static final int MODE_ITEMS = 1;
@@ -61,17 +63,16 @@ public class ChatsFragment extends Fragment
         }
     }
 
-    // TODO MAKE NEW CONVERSATION DIALOG AND FUNC WITH SERVER SIDE
-
     private void RegisterReceiver()
     {
         if (getContext() != null)
         {
+            /// 1st ///
             // List: OnItemClick
             UnregisterReceiver();
 
-            IntentFilter filter = new IntentFilter();
-            filter.addAction("CHATS_FRAGMENT_LIST__ON_ITEM_CLICK");
+            IntentFilter filter1 = new IntentFilter();
+            filter1.addAction("CHATS_FRAGMENT_LIST__ON_ITEM_CLICK");
             receiver = new BroadcastReceiver()
             {
                 @Override
@@ -85,7 +86,26 @@ public class ChatsFragment extends Fragment
                 }
             };
 
-            getContext().registerReceiver(receiver, filter);
+            getContext().registerReceiver(receiver, filter1);
+
+            /// 2nd ///
+            // New Conversation: From Function
+            UnregisterReceiver();
+
+            IntentFilter filter2 = new IntentFilter();
+            filter2.addAction("CHATS_FRAGMENT_FUNCTION__NEW_CONVERSATION");
+            receiverNC = new BroadcastReceiver()
+            {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    String email = intent.getExtras().getString("email");
+                    String name = intent.getExtras().getString("name");
+
+                    AddConversationToList(email, name);
+                }
+            };
+
+            getContext().registerReceiver(receiverNC, filter2);
         }
     }
 
@@ -101,6 +121,12 @@ public class ChatsFragment extends Fragment
         {
             getContext().unregisterReceiver(receiver);
             receiver = null;
+        }
+
+        if (receiverNC != null && getContext() != null)
+        {
+            getContext().unregisterReceiver(receiverNC);
+            receiverNC = null;
         }
     }
 
@@ -218,5 +244,12 @@ public class ChatsFragment extends Fragment
         }
     }
 
-    private void NewChat() {}
+    private void NewChat()
+    {
+        if (getContext() != null && getActivity() != null)
+        {
+            DialogManager dialogManager = new DialogManager();
+            dialogManager.MakeNewConversationDialog(getContext(), getActivity());
+        }
+    }
 }

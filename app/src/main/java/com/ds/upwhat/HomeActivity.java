@@ -1,6 +1,5 @@
 package com.ds.upwhat;
 
-import android.content.BroadcastReceiver;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
